@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 415" role="img" aria-labelledby="title desc">
+  <title id="title">M-PESA</title>
+  <desc id="desc">Green M-PESA payment logo with a phone mark and red swoosh.</desc>
+  <rect width="740" height="415" fill="#0dbb19"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#fff">
+    <text x="143" y="228" font-size="102" letter-spacing="-4">M</text>
+    <text x="314" y="228" font-size="102" letter-spacing="-4">PESA</text>
+  </g>
+  <rect x="240" y="125" width="67" height="166" rx="16" fill="#91e35a"/>
+  <rect x="253" y="145" width="41" height="106" rx="10" fill="#0dbb19"/>
+  <path d="M236 207c42 0 74-15 103-44-7 35-32 61-76 70-17 3-27-8-27-26z" fill="#ed174c"/>
+</svg>

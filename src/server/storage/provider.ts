@@ -1,0 +1,1 @@
+export interface StorageProvider { upload(file: File, path: string): Promise<string>; remove(path: string): Promise<void>; }

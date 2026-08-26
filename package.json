@@ -1,0 +1,49 @@
+{
+  "name": "portfolio-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "setup": "pwsh -File ./scripts/setup.ps1",
+    "create-admin": "pwsh -File ./scripts/create-admin.ps1",
+    "seed-database": "pwsh -File ./scripts/seed-database.ps1",
+    "cleanup-temp-files": "pwsh -File ./scripts/cleanup-temp-files.ps1",
+    "optimize-existing-images": "pwsh -File ./scripts/optimize-existing-images.ps1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ci": "npm run lint && npm run typecheck && npm test -- --run && npm run build"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "@tailwindcss/postcss": "^4.3.3",
+    "autoprefixer": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "next-auth": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prisma": "^6.16.2",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}

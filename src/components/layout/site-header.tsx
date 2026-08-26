@@ -1,0 +1,1 @@
+export function SiteHeader() { return <header><strong>Jeremiah Muthama Waita</strong></header>; }

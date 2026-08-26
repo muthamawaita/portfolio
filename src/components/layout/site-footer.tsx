@@ -1,0 +1,1 @@
+export function SiteFooter() { return <footer><small>Jeremiah Muthama Waita • Data, software, and training</small></footer>; }

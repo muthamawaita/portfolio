@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Check } from "lucide-react";
+import { services } from "@/data/platform";
+export default async function ServiceDetail({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const service = services.find((item) => item.slug === slug); if (!service) notFound(); return <main className="platform-page"><section className="wrap service-detail"><p>MARKETPLACE / {service.title.toUpperCase()}</p><h1>{service.title}</h1><span>{service.description}</span><div className="service-package-grid">{["Basic", "Professional", "Premium"].map((tier, index) => <article key={tier}><small>{tier.toUpperCase()}</small><h2>{index === 0 ? "A strong start" : index === 1 ? "A complete delivery" : "A tailored partnership"}</h2><p>{service.price}</p><ul>{["Clear scope and requirements", "Progress updates", "Review before delivery"].map((item) => <li key={item}><Check size={15} />{item}</li>)}</ul><Link className="button button-dark" href="/signup">Order this package</Link></article>)}</div></section></main>; }

@@ -1,0 +1,23 @@
+export type ResumeExperience = { role: string; company: string; dates: string; bullets: string[] };
+export type ResumeContent = { name: string; headline: string; email: string; phone: string; linkedin: string; github: string; summary: string; competencies: string[]; experience: ResumeExperience[]; education: Array<{ title: string; institution: string; dates: string }>; skills: Array<{ label: string; value: string }>; languages: string[] };
+
+export const resumeContent: ResumeContent = {
+  name: "Jeremiah Muthama Waita",
+  headline: "Data Analytics | Business Intelligence | Software Development",
+  email: "waitamuthama2021@gmail.com",
+  phone: "0794158981 / 0705297607",
+  linkedin: "https://www.linkedin.com/in/waita-muthama-a40769188/",
+  github: "https://github.com/waitamuthama",
+  summary: "Data and software professional with hands-on experience in business intelligence, statistical analysis, database management, and software development. Proficient in Tableau, Power BI, SPSS, Excel, SQL, Node.js, PHP and its frameworks, and Java. Experienced in transforming complex datasets into dashboards, reports, and actionable insights. Strong background in data cleaning, visualization, information systems, research, and technical training.",
+  competencies: ["Data Analysis and Visualization", "Tableau and Power BI Dashboard Development", "SPSS and Advanced Microsoft Excel", "Data Cleaning, Validation, and Quality Assurance", "SQL and Relational Database Management", "Statistical Analysis and Research Methods", "Database Design and Data Management", "Technical Documentation and Report Writing", "User Training and Capacity Development", "Stakeholder Requirements and Systems Analysis"],
+  experience: [
+    { role: "Information Technology Assistant and Software Developer", company: "Independent Policing Oversight Authority", dates: "January 2026 – Present", bullets: ["Develop Tableau and Power BI performance dashboards.", "Analyze operational data supporting informed organizational decision-making.", "Develop software applications supporting organizational information management.", "Manage databases and support structured data workflows.", "Gather requirements and translate them into technical solutions.", "Provide technical support, documentation, and user training."] },
+    { role: "Academic Assistant", company: "Hong Kong Writers", dates: "2022 – 2025", bullets: ["Delivered over 1,000 research and analytics projects.", "Analyzed datasets using SPSS, Excel, MATLAB, and Tableau.", "Cleaned, validated, interpreted, and visualized complex research data.", "Supported statistical analysis and postgraduate research methodologies.", "Produced concise analytical reports and evidence-based recommendations.", "Trained clients on research and analytical software tools."] },
+    { role: "Information Technology Tutor", company: "Elgon View College", dates: "January 2021 – December 2021", bullets: ["Delivered Excel and SPSS data analysis training.", "Taught programming, databases, web development, and ICT.", "Mentored over 200 students in practical technology skills.", "Developed digital learning resources and online assessments."] },
+    { role: "Junior Software Engineer", company: "Techbrand", dates: "2020 – 2021", bullets: ["Developed applications using Java, PHP, Node.js, and React.", "Designed relational databases using MySQL and PostgreSQL.", "Built secure APIs supporting application data exchange.", "Translated business requirements into scalable software solutions."] },
+    { role: "Industrial Attachment – ICT Department", company: "Kenya Methodist University", dates: "2018", bullets: ["Supported institutional ICT systems and digital services.", "Assisted data entry and electronic records management.", "Supported network connectivity and device configuration.", "Provided technical support to staff and students."] }
+  ],
+  education: [{ title: "Bachelor of Science in Computer Science", institution: "University of Eldoret", dates: "2015 – 2019" }, { title: "Certificate in Computer Packages", institution: "Emmanuel Computer College", dates: "2015" }, { title: "Kenya Certificate of Secondary Education", institution: "Kambi Mawe Secondary School", dates: "2014" }],
+  skills: [{ label: "Business Intelligence", value: "Tableau, Power BI, Microsoft Excel" }, { label: "Data Analytics", value: "SPSS, MATLAB, Orange, NVivo, MAXQDA" }, { label: "Programming", value: "Python, Java, JavaScript, PHP, C, C++" }, { label: "Databases", value: "SQL, MySQL, PostgreSQL, MongoDB" }, { label: "Development", value: "React.js, Node.js, Laravel, HTML, CSS" }, { label: "Cloud and Tools", value: "AWS, DigitalOcean, GitHub, WordPress" }],
+  languages: ["English – Fluent", "Kiswahili – Fluent"]
+};

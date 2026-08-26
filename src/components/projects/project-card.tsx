@@ -1,0 +1,1 @@
+export function ProjectCard() { return <article><h2>Featured project</h2></article>; }

@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { services } from "@/data/platform";
+export default function ServicesPage() { return <main className="platform-page"><section className="wrap platform-page-hero"><p>MARKETPLACE / SERVICES</p><h1>Expert help for<br /><em>your next move.</em></h1><span>From a polished portfolio to data analysis and custom builds, choose a service built around a clear outcome.</span></section><section className="wrap service-grid">{services.map((service, index) => <article key={service.slug}><small>0{index + 1} / {service.time}</small><h2>{service.title}</h2><p>{service.description}</p><div>{service.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><footer><strong>{service.price}</strong><Link href={`/services/${service.slug}`}>Order now <ArrowUpRight size={15} /></Link></footer></article>)}</section></main>; }

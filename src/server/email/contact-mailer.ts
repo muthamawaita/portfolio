@@ -1,0 +1,1 @@
+export interface ContactMailer { send(input: { name: string; email: string; message: string }): Promise<void>; }
